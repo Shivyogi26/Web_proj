@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background: url('https://www.pixelstalk.net/wp-content/uploads/2016/08/Travel-Images-For-Desktop.jpg') no-repeat center center/cover; /* Full-page background */
+  background-attachment: fixed; /* Ensures the background stays fixed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0; /* Remove any unwanted margin */
+  animation: moveBackground 30s ease-in-out infinite; /* Continuous movement of background */
+}
+
+/* Keyframes for continuous background movement */
+@keyframes moveBackground {
+  0% { background-position: 0 0; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0 0; }
+}
+
+/* Login container (Center the login box) */
+.login-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%; /* Ensure it takes full width */
+  padding: 0; /* Remove any unnecessary padding */
+  margin: 0; /* Remove margin */
+}
+
+/* Login box (No background and no vertical box) */
+.login-box {
+  background: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
+  padding: 40px;
+  border-radius: 15px;
+  width: 380px;
+  max-width: 100%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: none; /* Remove the border */
+  opacity: 0;
+  animation: fadeInBox 1s ease-out forwards; /* Fade-in and slide-in animation */
+}
+
+/* Keyframes for fading in and sliding the login box */
+@keyframes fadeInBox {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Heading */
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #FFB996; /* Soft Peach */
+  text-align: center; /* Align the title to center */
+  margin-top: 0; /* Remove unnecessary margin */
+  opacity: 0;
+  animation: fadeInText 1s ease-out forwards 0.3s; /* Fade-in with delay */
+}
+
+/* Keyframes for fade-in effect on text */
+@keyframes fadeInText {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Welcome text */
+p {
+  font-size: 1.1rem;
+  color: #FFCF81; /* Light Yellow */
+  margin-bottom: 25px;
+  opacity: 0;
+  animation: fadeInText 1.5s ease-out forwards 0.6s; /* Fade-in with delay */
+}
+
+/* Input field styling */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #FFCF81; /* Light Yellow */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #FFCF81; /* Light Yellow Border */
+  outline: none;
+  opacity: 0;
+  animation: fadeInField 1s ease-out forwards 1s; /* Fade-in input fields */
+}
+
+/* Keyframes for fading in the input fields */
+@keyframes fadeInField {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.input-group input:focus {
+  border-color: #FFB996; /* Soft Peach Focus */
+}
+
+/* Button */
+.btn {
+  background-color: #FFCF81; /* Light Yellow */
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  opacity: 0;
+  animation: fadeInButton 1s ease-out forwards 1.2s; /* Fade-in button */
+}
+
+/* Keyframes for fading in the button */
+@keyframes fadeInButton {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.btn:hover {
+  background-color: #FFB996; /* Soft Peach Hover */
+}
+
+/* Extra links */
+.extra-links {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  opacity: 0;
+  animation: fadeInText 1s ease-out forwards 1.4s; /* Fade-in with delay */
+}
+
+.extra-links a {
+  color: #FFCF81; /* Light Yellow Links */
+  text-decoration: none;
+  margin: 5px;
+  display: inline-block;
+}
+
+.extra-links a:hover {
+  color: #FFB996; /* Soft Peach Hover */
+}
+
+@media (max-width: 768px) {
+  .login-box {
+    width: 90%;
+    padding: 30px;
+  }
+}

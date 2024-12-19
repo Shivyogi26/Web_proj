@@ -1,0 +1,203 @@
+/* General Styles */
+body {
+  font-family: 'cambria', ramaraja;
+  margin: 0;
+  padding: 0;
+  background-color: #e9ef6d; /* Light Yellow */
+  color: #444343;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #FFCF81; /* Light Orange */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgb(9, 9, 9);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.auth-buttons .btn {
+  margin-left: 10px;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-register {
+  background-color: #FFB996;
+  color: white;
+}
+
+.btn-signin {
+  background-color: #D9EDBF;
+  color: black;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background-color: #FDFFAB;
+}
+
+.hero-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+input, select, .btn-search {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.class-selection {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-search {
+  background-color: #FFCF81;
+  color: white;
+  cursor: pointer;
+}
+
+/* Popular Flights Section */
+.popular-flights {
+  background-color: #D9EDBF; /* Soft Green */
+  padding: 2rem;
+  text-align: center;
+}
+
+.flight-card {
+  display: inline-block;
+  background-color: #FFB996; /* Light Orange */
+  padding: 2rem;
+  border-radius: 20px;
+  margin: 1rem;
+  color: white;
+  text-align: center;
+  width: 250px; /* Set a width for consistent card sizes */
+}
+
+.flight-card img {
+  border-radius: 5px;
+  width: 200px;
+  height: 150px;
+  object-fit: cover; /* Ensure images are responsive */
+}
+
+.flight-card p {
+  margin: 0.5rem 0;
+}
+
+.flights {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+/* Taxi Booking Section */
+/* Taxi Booking Section */
+.taxi-booking {
+  padding: 2rem;
+  text-align: center;
+  background-color: #FFCF81; /* Soft Yellow for background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+.taxi-booking h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.taxi-booking p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.taxi-booking .form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.taxi-booking input, .taxi-booking button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  color: #333;
+}
+
+.taxi-booking input:focus {
+  outline: none;
+  border-color: #FFB996; /* Soft orange focus border */
+  box-shadow: 0 0 5px rgba(255, 183, 150, 0.7); /* Soft orange glow */
+}
+
+.taxi-booking button {
+  background-color: #FFB996; /* Soft Orange */
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.taxi-booking button:hover {
+  background-color: #FF9A6B; /* Darker orange */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .taxi-booking {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .taxi-booking h2 {
+    font-size: 1.8rem;
+  }
+
+  .taxi-booking p {
+    font-size: 1rem;
+  }
+}

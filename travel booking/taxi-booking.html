@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Booking.com</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Flights</a></li>
+                    <li><a href="taxi-booking.html">Airport Taxis</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn btn-register">Register</button>
+                <button class="btn btn-signin">Sign in</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Taxi Booking Section -->
+    <section class="taxi-booking">
+        <div class="container">
+            <h2>Airport Taxi Booking</h2>
+            <p>Enter your details to book a taxi</p>
+            <form id="taxi-form">
+                <div class="form-fields">
+                    <input type="text" id="from" placeholder="Pick-up Location" required>
+                    <input type="text" id="to" placeholder="Drop-off Location" required>
+                    <input type="date" id="pickup-date" required>
+                    <input type="time" id="pickup-time" required>
+                    <button type="submit" class="btn-search">Book Taxi</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

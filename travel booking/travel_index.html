@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Booking.com</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Flights</a></li>
+                    <li><a href="taxi-booking.html">Airport Taxis</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn btn-register">Register</button>
+                <button class="btn btn-signin">Sign in</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero-title">Compare and book flights with ease</h2>
+            <p>Discover your next dream destination</p>
+            <div class="flight-options">
+                <form id="flight-form" onsubmit="validateForm(event)">
+                    <div class="form-fields">
+                        <input list="airport-list" id="from" placeholder="From where?" required>
+                        <input list="airport-list" id="to" placeholder="To where?" required>
+                        <datalist id="airport-list">
+                            <option value="Kempegowda International Airport (BLR)">
+                            <option value="Indira Gandhi International Airport (DEL)">
+                            <option value="Chhatrapati Shivaji International Airport (BOM)">
+                            <option value="Goa Dabolim International Airport(GOA)">
+                            <option value="Singapore Changi Airport (SIN)">
+                            <option value="Dubai International Airport (DXB)">
+                        </datalist>
+                        <input type="date" id="departure-date" required>
+                        <input type="date" id="return-date" required>
+                        <select id="passenger-count">
+                            <option value="1">1 Passenger</option>
+                            <option value="2">2 Passengers</option>
+                            <option value="3">3 Passengers</option>
+                            <option value="4">4 Passengers</option>
+                        </select>
+                        <div class="class-selection">
+                            <label><input type="radio" name="class" value="Economy" checked> Economy</label>
+                            <label><input type="radio" name="class" value="Business"> Business</label>
+                        </div>
+                        <button type="submit" class="btn-search">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Flights Section -->
+    <section class="popular-flights">
+        <div class="container">
+            <h3>Popular flights near you</h3>
+            <p>Find deals on domestic and international flights</p>
+            <div class="flights">
+                <div class="flight-card">
+                    <img src="mumbai.png" alt="Mumbai">
+                    <p>Bangalore to Mumbai</p>
+                    <p>Duration: 1 hour 30 minutes</p>
+                </div>
+                <div class="flight-card">
+                    <img src="dubai.png" alt="Dubai">
+                    <p>Bangalore to Dubai</p>
+                    <p>Duration: 4 hours</p>
+                </div>
+                <div class="flight-card">
+                    <img src="delhi.png" alt="Delhi">
+                    <p>Bangalore to Delhi</p>
+                    <p>Duration: 2 hours 40 minutes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

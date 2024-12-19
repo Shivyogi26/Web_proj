@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #DCEDC2; /* Sky Blue */
+            color: #333; /* Neutral text color */
+        }
+
+        /* Navbar */
+        .header {
+            background-color: #A8E6CF; /* Mint Green */
+            color: #333;
+            border-bottom: 3px solid #FF8C94; /* Bright Coral */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #FF8C94; /* Bright Coral */
+            margin-right: 50px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border-radius: 4px;
+            font-size: 1.2rem;
+        }
+
+        .nav-links a:hover {
+            background-color: #FFD3B6; /* Sunset Orange */
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #FFD3B6; /* Sunset Orange */
+            color: #333;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .search-bar input {
+            padding: 15px;
+            width: 400px;
+            border: 2px solid #FF8C94; /* Bright Coral */
+            border-radius: 8px;
+        }
+
+        .search-bar button {
+            padding: 15px 30px;
+            background-color: #FF8C94; /* Bright Coral */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .search-bar button:hover {
+            background-color: #A8E6CF; /* Mint Green */
+        }
+
+        /* Categories Section */
+        .categories {
+            background-color: #FFF; /* White background */
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .categories h2 {
+            margin-bottom: 40px;
+            color: #333;
+            font-size: 2.5rem;
+        }
+
+        .category-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .category-card {
+            background-color: #FFF; /* White cards */
+            border: 2px solid #A8E6CF; /* Mint Green border */
+            border-radius: 8px;
+            text-align: center;
+            padding: 20px;
+            width: 20%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .category-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .category-card h3 {
+            margin-top: 15px;
+            color: #333;
+            font-size: 1.5rem;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #FF8C94; /* Bright Coral */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 1rem;
+        }
+
+        .footer a {
+            color: #FFD3B6; /* Sunset Orange */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            color: #DCEDC2; /* Sky Blue */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <a href="#" class="logo">TravelGuide</a>
+            <ul class="nav-links">
+                <li><a href="../destination page/destination_index.html">Destination Page</a></li>
+                <li><a href="../hotel booking/hotel_index.html">Hotel Booking</a></li>
+                <li><a href="../travel booking/travel_index.html">Travel Agency Booking</a></li>
+                <li><a href="#payments">Payments</a></li>
+                <li><a href="#travel-guide">Travel Guide Booking</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to TravelGuide</h1>
+        <p>Your one-stop destination for exploring the world!</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for destinations...">
+            <button>Search</button>
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2>Explore Categories</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="b3.jpg" alt="Beaches">
+                <h3>Beaches</h3>
+            </div>
+            <div class="category-card">
+                <img src="t3.jpg" alt="Treks">
+                <h3>Treks</h3>
+            </div>
+            <div class="category-card">
+                <img src="tm2.png" alt="Temples">
+                <h3>Temples</h3>
+            </div>
+            <div class="category-card">
+                <img src="m2.jpg" alt="Monuments">
+                <h3>Monuments</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 TravelGuide | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
